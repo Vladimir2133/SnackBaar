@@ -9,17 +9,17 @@ class SnackBar{
 	}
 }
 
-function NoInput(){
-	const a = new SnackBar();
+const NoInput = a => {
+	a = new SnackBar();
 	a.Snack();
 }
 
-function YesInput(){
-	let b = document.getElementById("snbr").value;
+let YesInput = (b, babak) => {
+	b = document.getElementById("snbr").value;
 	if (b.length == 0){
 		b = 'Инпут не может быть пустой';
 	}
-	let babak = new SnackBar(b);
+	babak = new SnackBar(b);
 	babak.Snack();
 
 }
